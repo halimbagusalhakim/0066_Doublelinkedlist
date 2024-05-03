@@ -79,6 +79,11 @@ void deleteNode() {
 		cout << "List is empty" << endl;
 		return;
 	}
+
+	current = START;
+	previous = NULL;
+
+
 }
 
 
