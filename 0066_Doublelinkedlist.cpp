@@ -90,9 +90,22 @@ void deleteNode() {
 
 	if (current == NULL) {
 		cout << "\033[31mthe record with roll number " << rollNo << " not found\033[0m" << endl;
-		return;
-			 
+		return;	 
 	}
+	if (current = START) {
+		START = START->next;
+		if (START != NULL) {
+			START->prev = NULL;
+		}
+	}
+	else {
+		previous->next = current->next;
+		if (current->next != NULL) {
+			current->next->prev = previous;
+		}
+	}
+
+
 }
 
 
