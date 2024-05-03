@@ -87,6 +87,12 @@ void deleteNode() {
 		previous = current;
 		current = current->next;
 	}
+
+	if (current == NULL) {
+		cout << "\033[31mthe record with roll number " << rollNo << " not found\033[0m" << endl;
+		return;
+			 
+	}
 }
 
 
